@@ -1,0 +1,98 @@
+
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #e0f7fa;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #b2ebf2;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #333;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+
+    .item {
+      background-color: #80deea;
+      padding: 20px;
+      text-align: center;
+      width: 30%;
+      animation: float 4s ease-in-out infinite;
+      -webkit-animation: float 4s ease-in-out infinite; 
+    }
+    
+    .palm-tree {
+      animation: palm-tree-animation 4s infinite ease-in-out;
+      
+    }
+    
+    @keyframes palm-tree-animation {
+      0% {
+        transform: translateY(0);
+      }
+      25% {
+        transform: translateY(-15px);
+      }
+      50% {
+        transform: translateY(0);
+      }
+      75% {
+        transform: translateY(15px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .mountain {
+      animation: mountain-animation 1.5s infinite;
+    }
+    
+    @keyframes mountain-animation {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+    
+    .item {
+      display: inline-block;
+      margin: 20px;
+    }
+    
+    .item:hover {
+      transform: scale(1.1);
+
+    }
+    footer {
+      background-color: #b0bec5;
+      padding: 10px;
+      text-align: center;
+    }
